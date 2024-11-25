@@ -1,8 +1,8 @@
-summary: ONDC:ONEST10 - Work Opportunities
+summary: ONDC:ONEST10 - Work Opportunities(Commercials)
 description: The following is an illustrative flow for a job application transaction, where a candidate intends to apply for a specific job role.
 details:
 
-  - description: Sequence Diagram for Services Work Opportunities
+  - description: Sequence Diagram for Services Work Opportunities(Commercials)
     mermaidGraph: >-
       sequenceDiagram
         participant BAP
@@ -156,18 +156,6 @@ steps:
     reference: if any
     example:
       $ref: "../../Examples/Services_Work_Opportunities_yaml/on_status/on_status.yaml"
-  - summary: Description
-    api: cancel
-    description: BAP sends request for cancellation of job application.
-    reference: if any
-    example:
-      $ref: "../../Examples/Services_Work_Opportunities_yaml/cancel/cancel.yaml"
-  - summary: Description
-    api: on_cancel
-    description: BPP sends confirmation of cancellation of job application.
-    reference: if any
-    example:
-      $ref: "../../Examples/Services_Work_Opportunities_yaml/on_cancel/on_cancel.yaml"
   - summary: Description
     api: update
     description: BAP confirms user wants to submit the job application.

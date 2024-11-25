@@ -4,6 +4,8 @@ These specifications are to enable ONDC Network Participants to expose or consum
 
 ONDC ONEST specification is an adaptation of [beckn ONEST specifications](https://github.com/ONEST-Network/ONEST-Specification).
 
+[Live URL](https://ondc-official.github.io/ONDC-ONEST-Specifications).
+
 These specifications will be released in multiple phases enabling different use case and enhancements.
 
 ## Latest Version
@@ -12,8 +14,8 @@ These specifications will be released in multiple phases enabling different use 
 
 ## Earlier Versions
 
-| Version | Release Date | beckn Version                   | Comments                                                        |
-| ------- | ------------ | ------------------------------- | --------------------------------------------------------------- |
+| Version | Release Date | beckn Version                   | Comments                                         |
+| ------- | ------------ | ------------------------------- | ------------------------------------------------ |
 | v2.0.0  | TBD          | core - 1.0.0<br />ONEST - 2.0.0 | Initial ONEST specification for work-oppurtunity |
 
 ## Introduction
