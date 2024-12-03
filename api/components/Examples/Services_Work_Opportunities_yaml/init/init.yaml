@@ -14,7 +14,7 @@ value:
         code: std:080
       country:
         code: IND
-    timestamp: "2023-02-14T12:12:46Z"
+    timestamp: "2023-02-14T12:12:461Z"
     ttl: PT30S
   message:
     order:
@@ -24,6 +24,12 @@ value:
         - id: 0253719F295521CED39EC9C2F3C8DCDE
           fulfillment_ids:
             - "1"
+          tags:
+          - descriptor:
+              code: NP_FEES
+            list:
+              - code: ID
+                value: "1"
       fulfillments:
         - id: "1"
           customer:
@@ -45,32 +51,34 @@ value:
                   name: Hindi
               tags:
                 - descriptor:
-                    code: emp-details
+                    code: EMP_DETAILS
                     name: Employee Details
                   list:
                     - descriptor:
-                        code: expected-salary
+                        code: EXPECTED_SALARY
                       value: "1000000"
                     - descriptor:
-                        code: total-experience
-                      value: "4"
+                        code: TOTAL_EXPERIENCE
+                        name: Total Experience
+                      value: "P4Y"
                 - descriptor:
                     code: documents
                     name: Documents
                   list:
                     - descriptor:
-                        code: doc-type
+                        code: DOC_TYPE
                       value: resume
                     - descriptor:
                         code: link
                       value: https://example.com/resume.pdf
                     - descriptor:
-                        code: file-format
+                        code: FILE_FORMAT
                       value: pdf
                 - descriptor:
                     code: NP_FEES
-                    name: np_fees
                   list:
+                    - code: ID
+                      value: "1"
                     - code: COMMERCIAL_TYPE
                       value: percent
                     - code: COMMERCIAL_VALUE
@@ -78,7 +86,7 @@ value:
                     - code: COMMERCIAL_NAME
                       value: qualified
                     - code: COMMERCIAL_TRIGGERING_STATE
-                      value: OFFER-EXTENDED
+                      value: OFFER_EXTENDED
           contact:
             phone: "9999999999"
             email: abc@abc.bc
@@ -113,9 +121,8 @@ value:
                     value: item
               - descriptor:
                   code: NP_FEES
-                  name: np_fees
                 list:
-                  - code: id
+                  - code: ID
                     value: "1"
                   - code: COMMERCIAL_TYPE
                     value: percent
@@ -124,7 +131,7 @@ value:
                   - code: COMMERCIAL_NAME
                     value: qualified
                   - code: COMMERCIAL_TRIGGERING_STATE
-                    value: OFFER-EXTENDED
+                    value: OFFER_EXTENDED
               - descriptor:
                   code: TYPE
                 list:

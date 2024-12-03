@@ -61,7 +61,7 @@ context:
   timestamp:
     description: "The timestamp of the operation in ISO 8601 format."
     required: mandatory
-    usage: "2023-02-23T08:20:06Z"
+    usage: "2023-02-23T08:20:016Z"
     reference: null
   ttl:
     description: "The Time-to-Live (TTL) of the operation in ISO 8601 duration format."
@@ -172,7 +172,7 @@ message:
           code:
             description: "The state code of the fulfillment."
             required: mandatory
-            usage: "APPLICATION-STARTED"
+            usage: "APPLICATION_STARTED"
             reference: null
       customer:
         contact:
@@ -237,7 +237,7 @@ message:
       expiry:
         description: "The expiry date of the payment."
         required: mandatory
-        usage: "2024-02-23T08:20:06Z"
+        usage: "2024-02-23T08:20:016Z"
         reference: null
       amount:
         description: "The amount to be paid."
