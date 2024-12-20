@@ -107,7 +107,7 @@ By contributing to ONEST, you become part of a movement to shape the future of e
 - [ONDC Official Website](https://www.ondc.org)
 - [Beckn GitHub Repository](https://github.com/beckn)
 - [Contribution Guidelines](https://github.com/beckn)
-- [ONDC ONEST Specifications](https://www.ondc.org/specifications)
+- [ONDC ONEST Specifications](https://ondc-official.github.io/ONDC-ONEST-Specifications)
 
 ---
 
