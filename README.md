@@ -6,6 +6,8 @@
 
 ONEST facilitates the discovery of work opportunities and skilling resources across diverse industries and roles, enhancing access and engagement for local commerce in sectors like mobility, retail, education, and beyond.
 
+[ONDC ONEST Specifications](https://ondc-official.github.io/ONDC-ONEST-Specifications)
+
 ---
 
 ## Objectives
@@ -107,7 +109,6 @@ By contributing to ONEST, you become part of a movement to shape the future of e
 - [ONDC Official Website](https://www.ondc.org)
 - [Beckn GitHub Repository](https://github.com/beckn)
 - [Contribution Guidelines](https://github.com/beckn)
-- [ONDC ONEST Specifications](https://ondc-official.github.io/ONDC-ONEST-Specifications)
 
 ---
 
