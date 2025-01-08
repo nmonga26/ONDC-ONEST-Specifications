@@ -4,10 +4,10 @@ search:
       $ref: ./search/search_by_job_role.yaml
     search - by job provider:
       $ref: ./search/search_by_job_provider.yaml
-    search - by loaction of the job:
-      $ref: ./search/search_by_location_of_the_job.yaml
-    search - by industry type:
-      $ref: ./search/search_by_industry_type.yaml
+    search - by location of the job:
+      $ref: ./search/search_by_job_location.yaml
+    search - by category:
+      $ref: ./search/search_by_category.yaml
     search - by employment type:
       $ref: ./search/search_by_employment_type.yaml
     search - incremental start:
@@ -39,8 +39,16 @@ cancel:
       $ref: ./cancel/cancel.yaml
 on_search:
   examples:
-    on_search:
-      $ref: ./on_search/on_search.yaml
+    on_search - by job role:
+      $ref: ./on_search/on_search_by_role_name.yaml
+    on_search - by job provider:
+      $ref: ./on_search/on_search_by_job_provider.yaml
+    on_search - by location of the job:
+      $ref: ./on_search/on_search_by_job_location.yaml
+    on_search - by category:
+      $ref: ./on_search/on_search_by_category.yaml
+    on_search - by employment type:
+      $ref: ./on_search/on_search_by_employment_type.yaml
     on_search - incremental:
       $ref: ./on_search/on_search_inc.yaml
 on_select:
@@ -53,6 +61,8 @@ on_init:
       $ref: ./on_init/on_init.yaml
     on_init - unsolicited:
       $ref: ./on_init/on_init_unsolicited.yaml
+    on_init - unsolicited2:
+      $ref: ./on_init/on_init_unsolicited2.yaml
 on_confirm:
   examples:
     on_confirm:
@@ -63,8 +73,12 @@ on_update:
       $ref: ./on_update/on_update.yaml
 on_status:
   examples:
-    on_status:
+    on_status - APPLICATION-IN-PROGRESS:
       $ref: ./on_status/on_status.yaml
+    on_status - APPLICATION-SUBMITTED:
+      $ref: ./on_status/on_status_unsolciated1.yaml
+    on_status - OFFER-EXTENDED:
+      $ref: ./on_status/on_status_unsolciated2.yaml
 on_cancel:
   examples:
     on_cancel:

@@ -25,7 +25,7 @@ value:
       items:
         - id: 0253719F295521CED39EC9C2F3C8DCDE
           fulfillment_ids:
-            - "1"
+            - "F3"
           time:
             range:
               start: "2023-01-03T13:23:01+00:00"
@@ -33,275 +33,169 @@ value:
           tags:
             - descriptor:
                 code: NP_FEES
-                name: "Np Fees"
               list:
                 - code: ID
                   value: "1"
             - descriptor:
                 code: NP_FEES
-                name: "Np Fees"
               list:
                 - code: ID
                   value: "2"
             - descriptor:
-                code: ACADEMIC_ELIGIBILITY
-                name: Academic eligibility
+                code: ACADEMIC_QUALIFICATIONS
               list:
                 - descriptor:
                     code: COURSE_NAME
-                    name: Name of the course
                   value: Class-X
                 - descriptor:
                     code: MIN_PERCENTAGE
-                    name: >-
-                      Minimum percentage of marks to be obtained in the course
-                      for eligibility
                   value: "60"
                 - descriptor:
                     code: MANDATORY_ELIGIBILITY
-                    name: Mandatory Eligibility
                   value: "true"
             - descriptor:
-                code: ACADEMIC_ELIGIBILITY
-                name: Academic eligibility
+                code: ACADEMIC_QUALIFICATIONS
               list:
                 - descriptor:
                     code: COURSE_NAME
-                    name: Name of the course
                   value: Class-XII
                 - descriptor:
                     code: MIN_PERCENTAGE
-                    name: >-
-                      Minimum percentage of marks to be obtained in the course
-                      for eligibility
                   value: "60"
                 - descriptor:
                     code: MANDATORY_ELIGIBILITY
-                    name: Mandatory Eligibility
                   value: "true"
             - descriptor:
-                code: ACADEMIC_ELIGIBILITY
-                name: Academic eligibility
+                code: ACADEMIC_QUALIFICATIONS
               list:
                 - descriptor:
                     code: COURSE_LEVEL
-                    name: Level of the course
                   value: Under Graduate
                 - descriptor:
                     code: MIN_PERCENTAGE
-                    name: >-
-                      Minimum percentage of marks to be obtained in the course
-                      for eligibility
                   value: "60"
                 - descriptor:
                     code: MANDATORY_ELIGIBILITY
-                    name: Mandatory Eligibility
                   value: "true"
             - descriptor:
-                code: ACADEMIC_ELIGIBILITY
-                name: Academic eligibility
+                code: ACADEMIC_QUALIFICATIONS
               list:
                 - descriptor:
                     code: COURSE_LEVEL
-                    name: Level of the course
                   value: Graduate
                 - descriptor:
                     code: MANDATORY_ELIGIBILITY
-                    name: Mandatory Eligibility
                   value: "false"
             - descriptor:
                 code: JOB_REQUIREMENTS
-                name: Job requirements
               list:
                 - descriptor:
                     code: REQ_EXPERIENCE
-                    name: Required work experience in years
                   value: "P2Y6M"
                 - descriptor:
                     code: ADD_PROF_SKILL
-                    name: Skills required for the role
                   value: android-development
                 - descriptor:
                     code: ADD_PROF_SKILL
-                    name: Skills required for the role
                   value: dev-ops
-                - descriptor:
-                    code: ADD_PROF_SKILL
-                    name: Additional skills required for the job
-                  value: >-
-                    You have 8+ years of engineering experience, predominantly
-                    in shipping user-facing production features
             - descriptor:
                 code: JOB_RESPONSIBILITIES
-                name: Job responsibilities
               list:
                 - descriptor:
                     code: RESPONSIBILITY
-                    name: Responsibility
                   value: >-
-                    Build frontend experiences for our tools (Web, PWA and
-                    React Native)
+                    Build frontend experiences for our tools (Web, PWA and React Native)
                 - descriptor:
                     code: RESPONSIBILITY
-                    name: Responsibility
                   value: >-
-                    Articulate a long term technical direction and vision for
-                    building, maintaining, and scaling our web and mobile
-                    platforms
+                    Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms
                 - descriptor:
                     code: RESPONSIBILITY
-                    name: Responsibility
                   value: >-
-                    Create trustworthy user experiences by building interfaces
-                    that are simple, easy to comprehend, performant and
-                    reliable using modern tools like React, React Native,
-                    Typescript, Node.js, Jest and Webpack.
+                    Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack.
                 - descriptor:
                     code: RESPONSIBILITY
-                    name: Responsibility
                   value: >-
-                    Mentor and train other team members on design techniques
-                    and coding standards.
+                    Mentor and train other team members on design techniques and coding standards.
             - descriptor:
                 code: JOB_DETAILS
-                name: Listing details
               list:
                 - descriptor:
-                    code: INDUSTRY_TYPE
-                    name: Industry type
-                  value: IT Services & Consulting
-                - descriptor:
-                    code: DEPARTMENT
-                    name: Department
-                  value: Engineering - Software & QA
-                - descriptor:
                     code: CTC
-                    name: Salary Offered
                   value: 20,00,000
                 - descriptor:
                     code: POST_START_LOCATION
-                    name: Post start location
                   value: Pune
                 - descriptor:
                     code: WORKING_LOCATION
-                    name: Working location
                   value: Hybrid
                 - descriptor:
                     code: WORKING_TIME
-                    name: Working hours
                   value: Full-Time
       quote:
         price:
           currency: INR
-          value: "1100"
+          value: "1150"
         breakup:
-          - id: 0253719F295521CED39EC9C2F3C8DCDE
-            price:
-              currency: INR
-              value: "1100"
-            title: Fullstack Engineer
-            tags:
-              - descriptor:
-                  code: TYPE
-                list:
-                  - descriptor:
-                      code: TYPE
-                    value: item
-        ttl: P1D
+          - item:
+              id: "0253719F295521CED39EC9C2F3C8DCDE"
+              price:
+                  currency: INR
+                  value: "1100"
+              title: "item"
+          - item:
+              id: "a3a7fe79-f26e-4698-ad0f-874e6b5db085"
+              price:
+                  currency: INR
+                  value: "50"
+              title: "tax"
+        ttl: "P1D"
       fulfillments:
-        - id: "1"
-          type: lead
+        - id: "F3"
+          type: "lead & recruitment"
           state:
             descriptor:
-              code: APPLICATION_IN_PROGRESS
-              name: Application In Progress
+              code: APPLICATION-IN-PROGRESS
             updated_at: "2023-02-22T11:50:46.742Z"
-          customer:
-            person:
-              name: Sanjay
-              gender: Male
-              age: "35"
-              skills:
-                - code: Android
-                  name: Android
-                - code: AWS
-                  name: AWS
-              languages:
-                - code: en
-                  name: english
-                - code: ml
-                  name: Malayalam
-                - code: hi
-                  name: Hindi
-              tags:
-                - descriptor:
-                    code: EMP_DETAILS
-                    name: Employee Details
-                  list:
-                    - descriptor:
-                        code: EXPECTED_SALARY
-                        name: Expected Salary
-                      value: "1000000"
-                    - descriptor:
-                        code: TOTAL_EXPERIENCE
-                        name: Total Experience
-                      value: "P4Y"
-                - descriptor:
-                    code: DOCUMENTS
-                    name: Documents
-                  list:
-                    - descriptor:
-                        code: DOC_TYPE
-                        name: Document Type
-                      value: resume
-                    - descriptor:
-                        code: LINK
-                        name: Document Link
-                      value: https://example.com/resume.pdf
-                    - descriptor:
-                        code: FILE_FORMAT
-                        name: File Format
-                      value: pdf
-            contact:
-              phone: "9999999999"
-              email: abc@abc.bc
       payments:
-          url: "https://ondc.transaction.com/payment"
-          params:
+        - params:
             currency: "INR"
             transaction_id: "3937"
-            amount: "1700.00"
+            amount: "1150.00"
           status: "PAID"
           type: "ON-ORDER"
           collected_by: "BAP"
           tags:
-              descriptor:
-                code: "SETTLEMENT_DETAILS"
-              list:
-                - descriptor:
-                    code: "SETTLEMENT_COUNTERPARTY"
-                  value: "seller-app"
-                - descriptor:
-                    code: "SETTLEMENT_PHASE"
-                  value: "sale-amount"
-                - descriptor:
-                    code: "SETTLEMENT_TYPE"
-                  value: "upi"
-                - descriptor:
-                    code: "UPI_ADDRESS"
-                  value: "gft@oksbi"
-                - descriptor:
-                    code: "SETTLEMENT_BANK_ACCOUNT_NO"
-                  value: "XXXXXXXXXX"
-                - descriptor:
-                    code: "SETTLEMENT_IFSC_CODE"
-                  value: "XXXXXXXXX"
-                - descriptor:
-                    code: "BENEFICIARY_NAME"
-                  value: "xxxxx"
-                - descriptor:
-                    code: "BANK_NAME"
-                  value: "xxxx"
-                - descriptor:
-                    code: "BRANCH_NAME"
-                  value: "xxxx"
+            descriptor:
+              code: "SETTLEMENT_DETAILS"
+            list:
+              - descriptor:
+                  code: "SETTLEMENT_COUNTERPARTY"
+                value: "seller-app"
+              - descriptor:
+                  code: "SETTLEMENT_PHASE"
+                value: "sale-amount"
+              - descriptor:
+                  code: "SETTLEMENT_TYPE"
+                value: "neft"
+              - descriptor:
+                  code: "SETTLEMENT_BASIS"
+                value: "lead & recruitment"
+              - descriptor:
+                  code: "SETTLEMENT_WINDOW"
+                value: "P3M"
+              - descriptor:
+                  code: "SETTLEMENT_BANK_ACCOUNT_NO"
+                value: "XXXXXXXXXX"
+              - descriptor:
+                  code: "SETTLEMENT_IFSC_CODE"
+                value: "XXXXXXXXX"
+              - descriptor:
+                  code: "BENEFICIARY_NAME"
+                value: "xxxxx"
+              - descriptor:
+                  code: "BANK_NAME"
+                value: "xxxx"
+              - descriptor:
+                  code: "BRANCH_NAME"
+                value: "xxxx"
