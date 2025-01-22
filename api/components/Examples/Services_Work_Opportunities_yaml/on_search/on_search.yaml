@@ -42,21 +42,21 @@ value:
               state:
                 code: MH
               area_code:
-                code: 411002
+                code: "411002"
             - id: L2
               city:
                 code: std:022
               state:
                 code: MH
               area_code:
-                code: 400001
+                code: "400001"
             - id: L3
               city:
                 code: std:0522
               state:
                 code: UP
               area_code:
-                code: 226001
+                code: "226001"
           items:
             - id: 0253719F295521CED39EC9C2F3C8DCDE
               category_ids:
@@ -405,14 +405,13 @@ value:
                         value: "1"
                       - descriptor:
                           code: "DAY_TO"
-                        value: "6"
+                        value: "5"
                       - descriptor:
                           code: "TIME_FROM"
                         value: "0900"
                       - descriptor:
                           code: "TIME_TO"
                         value: "1800"
-
                   - descriptor:
                       code: "TIMING"
                     list:
@@ -428,7 +427,6 @@ value:
                       - descriptor:
                           code: "TIME_TO"
                         value: "1400"
-
                   - descriptor:
                       code: "ACADEMIC_QUALIFICATIONS"
                     list:
@@ -677,14 +675,13 @@ value:
                         value: "1"
                       - descriptor:
                           code: "DAY_TO"
-                        value: "6"
+                        value: "5"
                       - descriptor:
                           code: "TIME_FROM"
                         value: "0900"
                       - descriptor:
                           code: "TIME_TO"
                         value: "1800"
-
                   - descriptor:
                       code: "TIMING"
                     list:
@@ -700,7 +697,6 @@ value:
                       - descriptor:
                           code: "TIME_TO"
                         value: "1400"
-
                   - descriptor:
                       code: ACADEMIC_QUALIFICATIONS
                     list:
