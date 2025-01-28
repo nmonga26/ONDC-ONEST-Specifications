@@ -7,6 +7,7 @@
 ONEST facilitates the discovery of work opportunities and skilling resources across diverse industries and roles, enhancing access and engagement for local commerce in sectors like mobility, retail, education, and beyond.
 
 [ONDC ONEST Specifications](https://ondc-official.github.io/ONDC-ONEST-Specifications)
+[ONEST MOCK SERVER ANALYTICS](https://onest-mock-service.ondc.org/analytics)
 
 ---
 
