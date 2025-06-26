@@ -1,4 +1,4 @@
-# [Draft] Test Scenarios WO - 2.0 (Lite Version)
+# [Draft] Test Scenarios WO - 2.0
 
 > Logs to be submitted for the applicable flows below by creating a Pull Request (PR).
 
