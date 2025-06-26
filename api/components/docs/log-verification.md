@@ -1,95 +1,79 @@
-### [Draft]Test Scenarios WO - 2.0
+# [Draft] Test Scenarios WO - 2.0 (Lite Version)
 
-Logs to be submitted for applicable flows below by creating PR.
-
----
-
-#### Provider Setup
-
-- Provider NP Setup  
-  Define the catalog with 2 separate providers (2 locations per provider) and the following, as applicable:
-
-  - Supported fulfillment options: [TBD]
-  - Credentials
-
-- Category-Specific Catalog Setup  
-  Define a category-specific catalog with the same configuration as the general provider setup, but including the following:
-  - Category-specific variations:
-    - Jobs customizations: Base applications, variants, application availability, custom menu. Consider the following scenarios:
-      1. Lead application (price X)
-      2. Verified lead (price > 0)
-      3. Recruitment fees & Verified lead > 0
-    - Variants (along with base applications)
+> Logs to be submitted for the applicable flows below by creating a Pull Request (PR).
 
 ---
 
-### Flow Details
+## Provider Setup
 
-- **Flow 1: Catalog Pull & Refresh**
+### Provider NP Setup
+Configure two providers (each with 2 locations) and include:
 
-  1. Seeker NP initiates full catalog pull
-  2. Provider responds with full catalog
-  3. Seeker NP initiates catalog incremental refresh request
-  4. Provider NP responds with incremental catalog refresh response
+- Supported fulfillment options: **[TBD]**
+- Required credentials
 
-- **Flow 2: Application Selection & Fulfillment**
+### Category-Specific Catalog Setup
+Same configuration as general setup, but with the following customizations:
 
-  1. Seeker selects multiple applications (> 1 qty for each application) for applying
-  2. Seeker selects one application for applying
-  3. Provider NP provides all fulfillment slots (different fulfillment types)
-  4. Seeker selects different fulfillment type
-  5. Provider NP accepts and proceeds to submit
-  6. Application is confirmed
-  7. Seeker NP tracks live status of application
-  8. Unsolicited status updates for application until fulfilled
+- Job-related customizations:
+  - Base applications
+  - Variants
+  - Application availability
+  - Custom menu
 
-- **Flow 3: Application Checkout & Status Tracking**
-
-  1. Seeker selects multiple applications (> 1 qty for each application) for checkout
-  2. Provider NP provides all fulfillment slots (different fulfillment types), some with tracking enabled
-  3. Provider NP provides details of application that is out of stock or for which the quantity requested isn't available
-  4. Seeker selects different fulfillment type
-  5. Seeker NP accepts and proceeds to checkout
-  6. Application is confirmed
-  7. Seeker NP tracks live status of application
-  8. Unsolicited status updates for application until fulfilled
-
-- **Flow 4: Application Cancellation (Seeker)**
-
-  1. Seeker NP cancels application before processing
-
-- **Flow 5: Application Cancellation (Provider)**
-
-  1. Provider NP cancels application due to seeker unavailability
-
-- **Flow 6: Application Cancellation & Return (Provider)**
-  1. Provider cancels one of the applications before processing
-  2. Seeker returns an application, which provider NP accepts with liquidation
-  3. Seeker cancels another application, which provider NP accepts with return of application
+- Example Scenarios:
+  1. Lead Application (free or priced)
+  2. Verified Leads
+  3. Recruitment Fees
 
 ---
 
-### Catalog Rejection Flows (Optional)
-
-- **Flow 7: Catalog Rejection - Full Catalog**
-
-  1. Seeker app sends a search by city (full catalog) request
-  2. Provider app responds with catalog having errors at application/provider/BPP level
-  3. Seeker app responds with an ACK with minimum catalog processing time
-  4. Seeker app sends catalog rejection report
-
-- **Flow 8: Catalog Rejection - Rectification**
-
-  1. Provider app rectifies the issues as per the catalog rejection report and responds with a corrected catalog in the next pull
-  2. Seeker app responds with a successfully processed status
-
-- **Flow 9: Catalog Rejection - Incremental Search**
-  1. Seeker app sends an incremental search request
-  2. Provider app responds with incremental catalog having errors at application/provider/BPP level
-  3. Seeker app responds with an ACK with minimum catalog processing time
-  4. Seeker app sends catalog rejection report
+## Flow Details
 
 ---
 
-For detailed flow steps and further assistance, please refer to the [official documentation](https://docs.google.com/spreadsheets/d/118ShHWOE5Lx3Wh_35VLadqltMjp_AkCIZW0prP9xbNY/edit?gid=0#gid=0).
+### Flow 1: Catalog Discovery
 
+1. `Search`  
+2. `On_Search`  
+3. `Search_Inc`  
+4. `On_Search_Inc`  
+
+---
+
+### Flow 2: Application Lifecycle – Offer Accepted
+
+1. `Search`  
+2. `On_Search`  
+3. `Select`  
+4. `On_Select`  
+5. `Init`  
+6. `On_Init`  
+7. `Confirm`  
+8. `On_Confirm` – **Application Submitted**  
+9. `On_Status` – **Application Accepted**  
+10. `On_Status` – **Assessment In Progress**  
+11. `On_Update` – **Offer Extended**  
+12. `Update` – **Offer Accepted**  
+13. `On_Update` – **Offer Accepted**  
+
+---
+
+### Flow 3: Application Lifecycle – Application Rejected
+
+1. `Search`  
+2. `On_Search`  
+3. `Select`  
+4. `On_Select`  
+5. `Init`  
+6. `On_Init`  
+7. `Confirm`  
+8. `On_Confirm` – **Application Submitted**  
+9. `On_Status` – **Application Rejected**
+
+---
+
+## References
+
+For detailed specifications and payload structures, refer to the  
+[Official Documentation Sheet](https://docs.google.com/spreadsheets/d/118ShHWOE5Lx3Wh_35VLadqltMjp_AkCIZW0prP9xbNY/edit?gid=0#gid=0)
